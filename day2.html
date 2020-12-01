@@ -27,29 +27,49 @@
             <h2 align ="center" style="color: red;font-style: italic;font-size: large;background-color: aliceblue;font: 100;">Forms</h2>
             <form action="form.php" enctype="text/plain">
             <div>
-                First Name: <input type="text">
-                Last Name: <input type="text">
+                First Name: <input type="text" pattern="[A-Za-z]{4}" placeholder="Enter your first name "  required>
+                Last Name: <input type="text" placeholder="Enter your last name">
             </div><br>
 
             <div>
                 Mobile number:
-                <input type="number">
+                <input type="number" placeholder="Enter your Mobile number">
             </div><br>
             <div>
-                Email: <input type="email" id="email " name="email">
+                Email: <input type="email" id="email " name="email" placeholder="Enter your email address" required>
             </div><br>
             <div>
-                Password: <input type="password" id="password" name="password">
+                Password: <input type="password" id="password" name="password" placeholder="Enter your password" required>
             </div><br>
             <div>
                 Courses:
-                <select>
+                <select required style="size: 8ch;">
                     <option value = "HTML">HTML</option>
                     <option value="CSS">CSS</option>
-                    <option value="JavaScript">JavaScript</option>                </select>
+                    <option value="JavaScript">JavaScript</option>                
+                </select>
+            </div><br>
+            <div>
+                Branch:
+                <input list="Branch" name="Br" id="Br">
+                <datalist id="Branch">
+                    <option value="Information Technology">
+                    <option value="Computer Science">
+                    <option value="Civil">
+                    <option value="Mechanical">
+                </datalist>
+            </div><br>
+            <div>
+                Date of birth: <input type ="date" required>
+            </div>
+            <div>
+                <input type="submit">
             </div>
 
             </form>
+        <h2 style="background-color: lavender;font-style: italic;color:rebeccapurple;">Audio and Video Section</h2>
+        <h3>Team Naach</h3>
+        <video src="C:\Users\hp\Downloads\Bole Chudiyaan I Sangeet Choreography l Team Naach.mp4" type="Bole Chudiyaan I Sangeet Choreography l Team Naach.mp4" height="400px" width="500px" controls></video>
 
         </nav>
     </body>
